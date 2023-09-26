@@ -1,0 +1,53 @@
+section {
+  .container {
+    .box-left {
+      .flex {
+        a {
+          &:hover {
+            transform: scale(1.2);
+            transition: all 0.2s ease-in;
+            border-radius: 12px;
+            background: var(--gray-100, #F3F4F6);
+            box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+    }
+    .box-right {
+      .relative {
+        border: 8px solid white;
+        img {
+          &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// responsice for mobile
+
+@media only screen and (max-width: 768px) {
+    section {
+      .container {
+        flex-direction: column-reverse;
+        .box-right {
+          margin-bottom: 48px;
+          .relative {
+            width: 280px;
+            img {
+              width: 240px;
+              top: -25px;
+              right: 12px;
+              border: 10px solid white;
+
+            }
+          }
+        }
+      }
+    }
+  }
