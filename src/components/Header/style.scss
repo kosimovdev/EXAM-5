@@ -93,6 +93,7 @@ main {
       }
       .mobileRes {
         background-color: #030712;
+        overflow-x: hidden;
         p {
           color: white;
         }
@@ -168,6 +169,7 @@ main {
             background-color: white;
             width: 80%;
             height: 100%;
+            overflow-x: hidden;
             .mobile-info {
               display: block;
             }

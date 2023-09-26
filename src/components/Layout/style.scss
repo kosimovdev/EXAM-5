@@ -1,32 +1,63 @@
-section {
+.about {
+  background-color: #F9FAFB;
+  padding: 96px 0;
   .container {
-    .box-left {
-      .flex {
-        a {
-          &:hover {
-            transform: scale(1.2);
-            transition: all 0.2s ease-in;
-            border-radius: 12px;
-            background: var(--gray-100, #F3F4F6);
-            box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+    .main-box {
+      .box-left {
+        .relative {
+          border: 8px solid white;
+          img {
+            &:hover {
+              transform: scale(1.1);
+              transition: all 0.2s ease-in;
+            }
           }
         }
       }
-    }
-    .box-right {
-      .relative {
-        border: 8px solid white;
-        img {
-          &:hover {
-            transform: scale(1.1);
-            transition: all 0.2s ease-in;
-          }
+      .box-right {
+        p {
+          color: var(--gray-600, #4B5563);
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 16px;
+        }
+        span {
+          color: var(--gray-600, #4B5563);
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 16px;
+          margin-left: 15px;
         }
       }
     }
+
   }
 }
 
+
+.dark-mode {
+    background-color: #111827 !important;
+    .container {
+      .main-box{
+        .box-left {
+          .relative {
+            background-color: #9CA3AF;
+            img {
+              border: 8px solid var(--gray-600, #4B5563);
+              background: lightgray 50% / cover no-repeat;
+            }
+          }
+        }
+        .box-right {
+          h1,p,span{
+            color: white;
+
+          }
+        }
+      ;
+      }
+    }
+}
 
 
 // responsice for mobile
@@ -34,20 +65,38 @@ section {
 @media only screen and (max-width: 768px) {
     section {
       .container {
-        flex-direction: column-reverse;
-        .box-right {
-          margin-bottom: 48px;
-          .relative {
-            width: 280px;
-            img {
-              width: 240px;
-              top: -25px;
-              right: 12px;
-              border: 10px solid white;
+        padding: 0 16px !important;
+        .main-box {
+          margin-top: 24px !important;
+          flex-direction: column;
+          .box-left {
+           .relative {
+             img {
+               right: 20px !important;
+             }
+           }
+            margin: 0 auto;
+            .relative {
+              width: 280px;
+              border: none;
+              img {
+                width: 240px;
+                top: -25px;
+                right: 20px !important;
+                border: 10px solid white;
 
+              }
+            }
+          }
+          .box-right {
+            margin-top: 48px;
+            h1 {
+              font-size: 24px;
+              line-height: 32px;
             }
           }
         }
+
       }
     }
-  }
+ }
