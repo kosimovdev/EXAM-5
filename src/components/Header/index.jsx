@@ -15,14 +15,13 @@ const index = () => {
                <div className="container flex items-center justify-between">
                    {isMobile ? <span></span> : <h1 className='text-[30px] leading-[36px] font-[Bold]'>&lt;OK/&gt;</h1>}
 
-
                    <ul className={`flex justify-between items-center gap-x-6 ${modeClass}`}>
                        <li>
-                           <a className={`hoverLink ${modeClass}`} href="#">
+                           <a className={`hoverLink ${modeClass}`} href="/about">
                                About
                            </a></li>
                        <li>
-                           <a className='hoverLink' href="#">
+                           <a className='hoverLink' href="/skills">
                                Work
                            </a></li>
                        <li>

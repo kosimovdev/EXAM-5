@@ -1,11 +1,9 @@
 main {
   header {
     nav {
+      //position: fixed;
+      //top: 0;
       .container {
-        img {
-          width: 107px;
-          height: 36px;
-        }
         ul {
           li {
             font-family: Medium;
@@ -69,81 +67,81 @@ main {
 }
 
 .dark-mode {
-  background-color: #030712;
-  nav {
-    .container {
-      h1 {
-        color: white;
-      }
-      ul {
-        li {
-          .hoverLink {
-            color: white;
-            &::after {
-              background-color: white;
+  background-color: #030712 !important;
+    nav {
+      .container {
+        h1 {
+          color: white;
+        }
+        ul {
+          li {
+            .hoverLink {
+              color: white;
+              &::after {
+                background-color: white;
+              }
             }
+            i {
+              color: white;
+            }
+          }
+        }
+        .hamburger {
+          color: white;
+        }
+        .mobileRes {
+          background-color: #030712;
+          overflow-x: hidden;
+          p {
+            color: white;
           }
           i {
             color: white;
           }
+          button {
+            background-color: white;
+            color: #030712;
+          }
         }
-      }
-      .hamburger {
-        color: white;
-      }
-      .mobileRes {
-        background-color: #030712;
-        overflow-x: hidden;
-        p {
-          color: white;
-        }
-        i {
-          color: white;
-        }
-        button {
-          background-color: white;
-          color: #030712;
-        }
-      }
         .bgBlur {
           background: #D1D5DB;
           backdrop-filter: blur(4px);
         }
+      }
     }
-  }
-  section {
-    .container {
-      .box-left {
-        h1 {
-          color: white;
+    section {
+      .container {
+        .box-left {
+          h1 {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+          address {
+            color: white;
+          }
+          .flex {
+            a {
+              &:hover {
+                background: var(--gray-100, #000);
+                box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0);
+              }
+            }
+          }
         }
-        p {
-          color: white;
-        }
-        address {
-          color: white;
-        }
-        .flex {
-          a {
-            &:hover {
-              background: var(--gray-100, #000);
-              box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0);
+        .box-right {
+          .relative {
+            border: 8px solid var(--linear-gradient-button, #374151);
+            background: var(--gray-600, #4B5563);
+            img {
+              border: 8px solid var(--linear-gradient-button, #374151);
+              background: lightgray 50% / cover no-repeat;
             }
           }
         }
       }
-      .box-right {
-        .relative {
-          border: 8px solid var(--linear-gradient-button, #374151);
-          background: var(--gray-600, #4B5563);
-          img {
-            border: 8px solid var(--linear-gradient-button, #374151);
-            background: lightgray 50% / cover no-repeat;
-          }
-        }
-      }
     }
-  }
 }
 
 .light-mode {
@@ -158,6 +156,7 @@ main {
     header {
       nav {
         .container {
+
           ul {
             display: none;
           }
@@ -184,6 +183,14 @@ main {
     section {
       .container {
         flex-direction: column-reverse;
+        .box-left{
+          h1 {
+            font-size: 36px !important;
+          }
+          p {
+            max-width: 100% !important;
+          }
+        }
         .box-right {
           margin-bottom: 48px;
           .relative {

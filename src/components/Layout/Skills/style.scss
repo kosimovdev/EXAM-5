@@ -1,0 +1,25 @@
+.skills {
+    padding: 96px 0;
+}
+
+
+
+.dark-mode {
+   h1,p,img {
+       color: white;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+     .skills {
+       .container {
+         h1 {
+           font-size: 18px;
+         }
+         .main-box {
+           display: grid;
+           grid-column: 3;
+         }
+       }
+     }
+}

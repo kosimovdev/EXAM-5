@@ -1,0 +1,62 @@
+.work {
+  padding: 96px 0;
+  .container{
+    .main-box{
+      .card-1,.card-2,.card-3 {
+        display: flex !important;
+        flex-direction: unset !important;
+      }
+    }
+  }
+}
+
+
+.dark-mode {
+  &.work {
+    background-color: #030712;
+    .container {
+      .main-box {
+        .card-1,.card-2,.card-3 {
+          background-color: #111827;
+          .box-left,.box-right {
+            background-color: #111827;
+
+            p {
+              color: #6B7280;
+            }
+            .tech {
+              ul {
+                li {
+                  background-color: #4B5563;
+                  color: #6B7280;
+                }
+              }
+            }
+          }
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .work {
+    .container {
+      .main-box {
+        .card-2 {
+          display: flex;
+          flex-direction: column-reverse !important;
+        }
+        .card-1,.card-3 {
+          display: flex;
+          flex-direction: column !important;
+        }
+        .card-1,.card-2,.card-3 {
+          h1 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

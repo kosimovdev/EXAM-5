@@ -36,7 +36,7 @@
 
 
 .dark-mode {
-    background-color: #111827 !important;
+
     .container {
       .main-box{
         .box-left {
@@ -57,6 +57,9 @@
       ;
       }
     }
+  &.about {
+    background-color: #111827 !important;
+  }
 }
 
 
@@ -100,3 +103,19 @@
       }
     }
  }
+
+@media  only screen and (max-width: 375px) {
+    section {
+      .container {
+        .main-box{
+          .box-left {
+            .relative {
+              img {
+                right: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+}

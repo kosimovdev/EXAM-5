@@ -8,12 +8,10 @@ const App = () => {
     const [isTheme , setTheme] = useState(false)
     const toggle = () => {
         setIsMobile(!isMobile)
-        // console.log(isMobile)
     }
 
     const toggleTheme = () => {
         setTheme(!isTheme)
-        // console.log(isTheme)
     }
 
     const modeClass = isTheme ? 'dark-mode' : 'light-mode'
