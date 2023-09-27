@@ -16,6 +16,8 @@ import laravel from './assets/images/laravel.svg'
 import vue from './assets/images/vue.svg'
 import nuxt from './assets/images/nuxt.svg'
 import git from './assets/images/icon-git.svg'
+import person from './assets/images/person.svg'
+import person2 from './assets/images/person-2.png'
 
 
 const data  = {
@@ -159,6 +161,29 @@ const data  = {
         {
             id:10,
             title:"Git",
+        }
+    ],
+    comments : [
+        {
+            id:1,
+            name:"Dilshod Buymurodov",
+            title : "“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”",
+            image : person,
+            company: 'Founder - Paymart.uz',
+        } ,
+        {
+            id:2,
+            name:"Djasur Djumaev",
+            title:"“Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”",
+            image : person2,
+            company: 'Co-Founder - Uzum.uz',
+        },
+        {
+            id:3,
+            name:"Avaz Aminov ",
+            title: "“Mukhriddin was extremely easy and pleasant to work with and he truly cares about the project being a success. Mukhriddin has a high level of knowledge and was able to work on my Full stack application without any issues.”",
+            image : person,
+            company: 'PM - Solution Lab',
         }
     ],
 

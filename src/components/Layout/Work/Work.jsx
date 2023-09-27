@@ -10,7 +10,7 @@ const Work = () => {
      const {modeClass} = useContext(Context)
     const {workSkills} = data
     return (
-        <section className={`work ${modeClass}`}>
+        <section id='work' className={`work ${modeClass}`}>
           <div className="container">
               <button className='py-1 px-5 bg-[#E5E7EB] rounded-[12px] grid place-content-center mx-auto mb-3'>Work</button>
               <h1 className='text-[20px] leading-[28px]  mb-12 text-center'>Some of the noteworthy projects I have built:</h1>

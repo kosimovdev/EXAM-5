@@ -68,44 +68,52 @@ main {
 
 .dark-mode {
   background-color: #030712 !important;
-    nav {
-      .container {
-        h1 {
-          color: white;
-        }
-        ul {
-          li {
-            .hoverLink {
-              color: white;
-              &::after {
-                background-color: white;
+    header {
+      background-color: #030712 !important;
+      nav {
+        .container {
+          h1 {
+            color: white;
+          }
+          ul {
+            li {
+              .hoverLink {
+                color: white;
+                &::after {
+                  background-color: white;
+                }
               }
+              i {
+                color: white;
+              }
+            }
+          }
+          .hamburger {
+            color: white;
+          }
+          .mobile-res {
+            background-color: #030712 !important;
+            .mobile-info {
+              background-color: #030712 !important;
+            }
+            .mobile-btn {
+              background-color: #030712 !important;
+            }
+            p {
+              color: white;
             }
             i {
               color: white;
             }
+            button {
+              background-color: white;
+              color: #030712;
+            }
           }
-        }
-        .hamburger {
-          color: white;
-        }
-        .mobileRes {
-          background-color: #030712;
-          overflow-x: hidden;
-          p {
-            color: white;
+          .bgBlur {
+            background: #D1D5DB;
+            backdrop-filter: blur(4px);
           }
-          i {
-            color: white;
-          }
-          button {
-            background-color: white;
-            color: #030712;
-          }
-        }
-        .bgBlur {
-          background: #D1D5DB;
-          backdrop-filter: blur(4px);
         }
       }
     }
@@ -161,16 +169,19 @@ main {
             display: none;
           }
           .hamburger {
-            display: block;
+            display: flex !important;
           }
-          .mobileRes {
+          .mobile-res {
             display: block;
             background-color: white;
-            width: 80%;
-            height: 100%;
-            overflow-x: hidden;
+            width: 80% !important;
+
             .mobile-info {
-              display: block;
+              display: block !important;
+              background-color: white !important;
+            }
+            .mobile-btn {
+              background-color: white;
             }
           }
         }

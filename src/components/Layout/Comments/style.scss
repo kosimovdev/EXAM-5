@@ -1,0 +1,17 @@
+.comments {
+  background-color: #F9FAFB;
+  padding: 96px 0;
+}
+
+.dark-mode {
+  &.comments {
+    background-color: #111827 !important;
+    .container {
+      .main-box {
+        .card {
+          background-color: #1F2937;
+        }
+      }
+    }
+  }
+}

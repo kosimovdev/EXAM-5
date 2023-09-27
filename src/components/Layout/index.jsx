@@ -5,6 +5,7 @@ import {Context} from "../../context/context.jsx";
 import Skills from "./Skills/Skills.jsx";
 import Experience from "./Expirence/Expirence.jsx";
 import Work from "./Work/Work.jsx";
+import Comment from "./Comments/Comment.jsx";
 
 const index = () => {
 
@@ -48,6 +49,7 @@ const index = () => {
        <Skills/>
        <Experience/>
        <Work/>
+       <Comment/>
    </>
   );
 };

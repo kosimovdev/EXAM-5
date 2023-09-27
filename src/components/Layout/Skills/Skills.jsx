@@ -6,7 +6,6 @@ const Skills = () => {
     const {skills} = data
 
     const {modeClass,isTheme} = useContext(Context)
-    console.log(modeClass)
     return (
            <section id='skills' className={`skills ${modeClass}`}>
                <div className="container">
