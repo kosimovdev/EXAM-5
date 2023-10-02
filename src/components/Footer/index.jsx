@@ -5,7 +5,7 @@ import {Context} from "../../context/context.jsx";
 const index = () => {
     const {modeClass , isTheme} = useContext(Context)
   return (
-    <footer className={`footer ${modeClass}`}>
+    <footer id='contact' className={`footer ${modeClass}`}>
        <div className="container">
            <button className='py-1 px-5 bg-[#E5E7EB] rounded-[12px] grid place-content-center mx-auto mb-[16px] duration-150 hover:bg-[#111827] hover:text-white'>Testimonials</button>
            <h1 className='max-w-[53%] mx-auto text-[20px] leading-[28px]  mb-12 text-center'>Imom Buxoriy bobomizning “Al Jome as sahih” kitobining eng birinchi hadisi shu hadis bilan boshlangan:

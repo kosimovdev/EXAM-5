@@ -10,10 +10,10 @@ const index = () => {
 
   return (
    <main className={`${modeClass}`}>
-       <header className='w-full fixed top-0 left-0 bg-white z-50'>
+       <header  className='w-full fixed top-0 left-0 bg-white z-50'>
            <nav className='py-4'>
                <div className="container flex items-center justify-between">
-                   {isMobile ? <span></span> : <h1 className='text-[30px] leading-[36px] font-[Bold]'>&lt;OK/&gt;</h1>}
+                   {isMobile ? <span></span> : <a href='#header' className='text-[30px] leading-[36px] font-[Bold]'>&lt;OK/&gt;</a>}
 
                    <ul className={`flex justify-between items-center gap-x-6 ${modeClass}`}>
                        <li>
@@ -96,7 +96,7 @@ const index = () => {
                </div>
            </nav>
        </header>
-       <section className='py-[96px]'>
+       <section id='header' className='py-[96px]'>
            <div className="container flex justify-between items-center">
                <div className="box-left">
                    <h1 className='text-[60px] font-[Bold]'>Hi,I'm Oyatullo 👋</h1>
