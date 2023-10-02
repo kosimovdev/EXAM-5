@@ -91,6 +91,9 @@ main {
           .hamburger {
             color: white;
           }
+          i {
+            color: white;
+          }
           .mobile-res {
             background-color: #030712 !important;
             .mobile-info {
@@ -209,7 +212,7 @@ main {
             img {
               width: 240px;
               top: -25px;
-              right: 12px;
+              right: 12px !important;
               border: 10px solid white;
 
             }

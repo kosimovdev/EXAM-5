@@ -34,7 +34,7 @@ const index = () => {
                            </a></li>
                        <li className='border-l-[1px] border-[#F3F4F6] pl-6 flex items-center '>
                            {
-                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6 text-black' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 '></i>
+                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6 text-black cursor-pointer' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 cursor-pointer'></i>
                            }
                            <button className='py-[6px] px-[16px] bg-[#111827] rounded-[12px] text-white'>Download CV</button>
                        </li>
@@ -43,7 +43,7 @@ const index = () => {
                    <div className="flex md:hidden">
                        <div className="block lg:hidden">
                            {
-                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 '></i>
+                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6 cursor-pointer' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 cursor-pointer'></i>
                            }
                        </div>
                        <div onClick={toggle} className='flex lg:hidden hamburger'>
@@ -63,19 +63,19 @@ const index = () => {
                                    <i onClick={toggle} className='bx bx-x text-[40px] absolute right-[16px] top-[16px]'></i>
                                    <ul className='mobile-info pt-[56px] p-4 border-t-[1px] border-[#F3F4F6]'>
                                        <li className='mb-4'>
-                                           <a className='hoverLink' href="#about">
+                                           <a onClick={toggle} className='hoverLink' href="#about">
                                                About
                                            </a></li>
                                        <li className='mb-4'>
-                                           <a className='hoverLink' href="#work">
+                                           <a onClick={toggle} className='hoverLink' href="#work">
                                                Work
                                            </a></li>
                                        <li className='mb-4'>
-                                           <a className='hoverLink' href="#comments">
+                                           <a onClick={toggle} className='hoverLink' href="#comments">
                                                Testimonials
                                            </a></li>
                                        <li className='mb-4'>
-                                           <a className='hoverLink' href="#contact">
+                                           <a onClick={toggle} className='hoverLink' href="#contact">
                                                Contact
                                            </a></li>
                                    </ul>
@@ -83,7 +83,7 @@ const index = () => {
                                        <div className='flex justify-between items-center text-[16px] mt-4'>
                                            <p>Switch Theme</p>
                                            {
-                                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6 text-black' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 '></i>
+                                               isTheme === 'dark-mode' ? <i onClick={toggleTheme} className='bx bx-sun text-[24px] mr-6 text-black cursor-pointer' ></i> :  <i onClick={toggleTheme} className='bx bxs-moon text-[24px] mr-6 cursor-pointer'></i>
                                            }
                                        </div>
                                        <button className='w-full py-[6px] px-[16px] bg-[#111827] rounded-[12px] text-white mt-4'>Download CV</button>
